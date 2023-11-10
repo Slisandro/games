@@ -2,8 +2,7 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './modules/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -13,6 +12,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        "c4": "#5C2CD5",
+        "c4-pink": "#F26389",
+        "c4-white": "#FFFFFF",
+        "c4-yellow": "#F2C166",
+        "c4-purple": "#7A45FF"
+      },
+      borderColor: {
+        "c4": "black"
+      },
+      boxShadow: {
+        'c4-default': '0px 2px 0px black',
+        'c4-button': '0px 4px 0px black',
+        'c4-card': '0px 8px 0px black',
+      }
     },
   },
   plugins: [],
