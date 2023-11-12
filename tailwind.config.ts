@@ -26,7 +26,8 @@ const config: Config = {
         'c4-default': '0px 2px 0px black',
         'c4-button': '0px 4px 0px black',
         'c4-card': '0px 8px 0px black',
-      }
+        'c4-board-item': '0px -4px 0px black',
+      },
     },
   },
   plugins: [],
