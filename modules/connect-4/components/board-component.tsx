@@ -17,7 +17,6 @@ function BoardComponent() {
         newBoard[i][j] = currentPlayer;
         setBoard(newBoard);
 
-        // Check for win
         if (checkForWin(newBoard, currentPlayer)) {
             setTimeout(() => {
                 alert(`${currentPlayer} wins!`);
