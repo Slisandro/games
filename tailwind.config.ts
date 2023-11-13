@@ -17,7 +17,8 @@ const config: Config = {
         "c4-pink": "#F26389",
         "c4-white": "#FFFFFF",
         "c4-yellow": "#F2C166",
-        "c4-purple": "#7A45FF"
+        "c4-purple": "#7A45FF",
+        "c4-purple-light": "#9685C1"
       },
       borderColor: {
         "c4": "black"
