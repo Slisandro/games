@@ -1,13 +1,14 @@
-"use client"
+"use client" 
 import React from 'react';
-import BoardComponent from '../components/panel-component';
+import BoardComponent from '../components/board-component';
 import CardHeader from '../components/card-header-component';
 import { useRouter } from 'next/navigation';
 
+const score_1 = 12;
+const score_2 = 23;
+
 function BoardLayouts() {
     const router = useRouter();
-    const score_1 = 12
-    const score_2 = 23
     const navigateToHome = () => router.push("/connect-4");
     return (
         <main className="flex min-h-screen max-h-screen h-screen flex-col items-center py-4 bg-c4-purple gap-12">
