@@ -1,19 +1,25 @@
-import { useState } from 'react';
-import TimerComponent from './timer-component';
-import Cell from './cell-component';
 import { checkForWin } from '../utilities/check-for-win-utilities';
+import Cell from './cell-component';
+import TimerComponent from './timer-component';
 
-function BoardComponent() {
-    const emptyBoard = Array(6).fill(Array(7).fill(null));
-    const [board, setBoard] = useState(emptyBoard);
-    const [currentPlayer, setCurrentPlayer] = useState<"X" | "O">('X');
+function BoardComponent({ board, setBoard, currentPlayer, setCurrentPlayer }: { board: any[], setBoard: any, currentPlayer: "O" | "X", setCurrentPlayer: any }) {
+
+    const handleTimedOut = () => {
+        const randomColumn = Math.floor(Math.random() * 6);
+        const randomRow = Math.floor(Math.random() * 6);
+        // validate if random position is available
+        // if() {
+        console.log(randomColumn, randomRow)
+        return handleClick(randomColumn, randomRow);
+        // }
+    };
 
     const handleClick = (i: number, j: number) => {
         if (board[i][j] !== null) {
             return;
         }
 
-        const newBoard = board.map(row => [...row]); 
+        const newBoard = board.map(row => [...row]);
         newBoard[i][j] = currentPlayer;
         setBoard(newBoard);
 
@@ -42,7 +48,7 @@ function BoardComponent() {
                     ))}
                 </div>
             ))}
-            <TimerComponent currentPlayer={currentPlayer} />
+            <TimerComponent currentPlayer={currentPlayer} handleTimedOut={handleTimedOut} />
         </div>
     )
 }
