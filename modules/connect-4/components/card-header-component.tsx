@@ -9,7 +9,7 @@ const ItemPoint = ({ color }: { color: string }) => {
 }
 
 const CardHeader = () => (
-    <div className="w-[max-content] h-[max-content] mx-auto grid grid-cols-2 grid-rows-2 gap-1">
+    <div className="w-[max-content] h-[max-content] mx-auto grid grid-cols-2 grid-rows-2 gap-1 duration-75 hover:rotate-90 hover:duration-150">
         <ItemPoint color="pink" />
         <ItemPoint color="yellow" />
         <ItemPoint color="yellow" />
