@@ -1,16 +1,18 @@
 "use client"
 import { useRouter } from "next/navigation";
+import { InfoIcon } from "../assets/icons/info-icon";
+import { PersonIcon } from "../assets/icons/person-icon";
+import { RobotIcon } from "../assets/icons/robot-icon";
 import Card from "../components/card-component";
 import CardContent from "../components/card-content-component";
 import CardHeader from "../components/card-header-component";
-import { RobotIcon } from "../assets/icons/robot-icon";
-import { PersonIcon } from "../assets/icons/person-icon";
-import { InfoIcon } from "../assets/icons/info-icon";
 
 export default function HomeLayout() {
     const router = useRouter();
+
     const navigateToPlay = () => router.push("/connect-4/play");
     const navigateToRules = () => router.push("/connect-4/rules");
+
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-c4">
