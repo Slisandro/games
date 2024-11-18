@@ -1,4 +1,4 @@
-export const checkForWin = (board: ("X" | "O" | null)[][], currentPlayer: "X" | "O"): boolean => {
+export const checkForWin = (board: ("X" | "O" | "BOT" | null)[][], currentPlayer: "X" | "O" | "BOT"): boolean => {
     // Check rows
     for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 4; j++) {
