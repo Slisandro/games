@@ -22,7 +22,7 @@ const listGames: Game[] = [
     {
         id: 2,
         name: "Rock, Papel, Scissors",
-        disabled: true,
+        disabled: false,
         url: "/rock-papel-scissors",
         urlImg: Connect4.src,
         Icon: <CardHeader />
