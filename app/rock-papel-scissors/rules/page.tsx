@@ -40,7 +40,7 @@ function RulesLayout() {
                         </li>
                         <li className="text-sm">
                             <b className="pr-4">3</b> 
-                            If both players choose the same gesture, it's a tie, and the round is replayed.
+                            If both players choose the same gesture, it is a tie, and the round is replayed.
                         </li>
                     </ol>
                     <button 
